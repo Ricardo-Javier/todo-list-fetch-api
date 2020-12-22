@@ -54,7 +54,7 @@ export class TodoList extends React.Component {
 		return (
 			<div className="container">
 				<div className="background" />
-				<h1>My day</h1>
+				<h1>My Day</h1>
 				<h2 className="date">
 					{new Date().toLocaleDateString("en-US")}
 				</h2>
@@ -71,13 +71,14 @@ export class TodoList extends React.Component {
 						required
 					/>
 					<label htmlFor="name" className="form__label">
-						What do you have to do today?
+						Today, I have to...
 					</label>
 				</div>
 				<ul>
 					{todos.map((todo, index) => {
 						return (
 							<li key={index}>
+								I have to&nbsp;
 								{todo}
 								<span>
 									<FontAwesomeIcon

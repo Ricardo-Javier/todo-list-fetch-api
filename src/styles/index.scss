@@ -3,6 +3,7 @@
 html, body {
   margin: 0; padding: 0;
   font-family: 'Quicksand', sans-serif;
+  color: white;
 }
 .hero-bkg-animated {
   background: gray url(../img/background.jpg) repeat 0 0;
@@ -40,12 +41,19 @@ ul {
     max-width: 30vw;
     max-height: 80vh;
     height: 100%;
-    border:5px;
-    border-style: solid;
-    border-radius: 15px;
-    border-color: lightblue;
+    border-radius: 7px;
+    border-style: solid;   
     box-sizing: border-box;
+    transition: color 0.65s;
+   
+ 
+  &:hover {
+    color: #090c9bff;
+  }
+
 }
+
+
 
 .background {
 
@@ -59,11 +67,11 @@ ul {
   right: 0;
   bottom: 0;
   background-color:white;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(15px);
+  -webkit-filter: blur(10px);
     z-index: -1;
-  opacity: 0.7;
-   filter:contrast(100%);
+  opacity: 0.3;
+   
 }
 
 
@@ -122,7 +130,7 @@ li
 .date {
     font-size: 15px;   
     font-style: italic;
-    color: #57b8ffff;
+    color: #090c9bff;
     position: relative;
   padding: 0px 0 0;
   margin-top: 50px;
@@ -130,10 +138,10 @@ li
   left:35%;
 }
 
-$primary: #57b8ffff;;
+$primary: #090c9bff;
 $secondary: white;
 $white: #090c9bff;
-$gray: #57b8ffff;
+$gray: #090c9bff;
 .form__group {
   position: relative;
   padding: 15px 0 0;
