@@ -9,7 +9,7 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { TodoList } from "./component/TodoList.js";
+import ToDoList from "./component/TodoList.js";
 
 //render your react application
-ReactDOM.render(<TodoList />, document.querySelector("#app"));
+ReactDOM.render(<ToDoList />, document.querySelector("#app"));

@@ -5,16 +5,26 @@ html, body {
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 .hero-bkg-animated {
   background: gray url(../img/background.jpg) repeat 0 0;
-  width: 100%;
   margin: 0;
   text-align: center;
   background-size: 160%;
-  height: 100%;
-  padding-top: 120px;
   box-sizing: border-box;
   -webkit-animation: slide 150s linear infinite;
+}
+
+h1,h2{
+    display: inline;
 }
 
 
@@ -32,13 +42,8 @@ ul {
 .container{
     overflow-x: hidden;
     overflow-y:auto;
-   position: absolute;
-   left:35%;
-    align-items: center;
     padding: 50px;
-    margin-bottom: 15px;
-    width: 60%;
-    max-width: 30vw;
+    max-width: 800px;
     max-height: 80vh;
     height: 100%;
     border-radius: 7px;
@@ -46,7 +51,6 @@ ul {
     box-sizing: border-box;
     transition: color 0.65s;
    
- 
   &:hover {
     color: #090c9bff;
   }
@@ -56,34 +60,28 @@ ul {
 
 
 .background {
-
     background-size:cover;     
-  position: absolute;
-    max-width: 100vw;
-    max-height: 100vh;
-    height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:white;
-  filter: blur(15px);
-  -webkit-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:white;
+    filter: blur(15px);
+    -webkit-filter: blur(10px);
     z-index: -1;
-  opacity: 0.3;
-   
+    opacity: 0.3;
 }
 
 
 span {
     cursor: pointer;
-   float: right;
-   color: #57b8ffff;
-   margin-right: 10px;
+    float: right;
+    color: #57b8ffff;
+    margin-right: 10px;
 }
 
-li
-{
+li{
     margin-top: 15px;
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
@@ -92,7 +90,7 @@ li
                 0 16px 32px rgba(0,0,0,0.07), 
                 0 32px 64px rgba(0,0,0,0.07);
                 border-radius: 5px;
-                width: 85%;
+                // width: 85%;
                 height: 40px;
                
   line-height: 40px;
@@ -121,11 +119,10 @@ li
     font-size: 30px;
     font-weight: bold;
     color: #090c9bff;
-   position: relative;
-  padding: 15px 0 0;
-  margin-top: 3px;
-  width: 100%;
-  margin-left: -100px;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 3px;
+    margin-right: 4rem;
 }
 
 .date {
@@ -133,10 +130,10 @@ li
     font-style: italic;
     color: #090c9bff;
     position: relative;
-  padding: 0px 0 0;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  left:35%;
+    padding: 0px 0 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: right;
 }
 
 $primary: #090c9bff;
